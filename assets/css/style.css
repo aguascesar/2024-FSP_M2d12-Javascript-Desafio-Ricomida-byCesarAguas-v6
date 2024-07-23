@@ -1,0 +1,87 @@
+/*
+@font-face {
+  font-family: MyHelvetica;
+  src: local("Helvetica Neue Bold"),
+  local("HelveticaNeue-Bold"),
+  url(MgOpenModernaBold.ttf);
+  font-weight: bold;
+}
+*/
+@font-face {
+  font-family: 'Lobster';
+  src: url('../fonts/Lobster-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cabin';
+  src: url('../fonts/Cabin-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+*/
+.cabin-uniquifier {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.cabin-bold {
+  font-family: 'Cabin';font-size: 40px;
+  text-align: left;
+}
+
+
+.tooltip{
+    position: relative;;
+    border:10px solid #333;
+    background:#050500ec;
+    padding:5px 5px;
+    color:cyan;
+    /*display:none;*/
+  }
+  
+  .button{
+    display: inline-block;
+  }
+
+  .ricomidaHeader{
+    font-family: "Lobster", sans-serif;
+    /*font-family: 'Raleway', sans-serif;*/
+    background: #373A3C;
+    color: white;
+  }
+  
+
+  .ricomidaFooter{
+    font-family: "Lobster", sans-serif;
+    background: #373A3C;
+    color: white;
+    }
+  
+  .btn-empezar{
+    background: #DC3545;
+    color: white;
+    border-color: white;
+  }
+  
+  .suscribete{
+
+    background: #DC3545 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  
+  
