@@ -39,22 +39,43 @@
 }
 
 .cabin-bold {
-  font-family: 'Cabin';font-size: 40px;
+  font-family: 'Cabin';font-size: 30px;
   text-align: left;
 }
 
 
-.tooltip{
+
+[data-tooltip]:hover::after {
+  display: block;
+  position: absolute;
+  content: attr(data-tooltip);
+  border: 1px solid #FFFFFF;
+  background: #000;
+  padding: .25em;
+  color: #FFFFFF;
+}
+
+
+/**
+  .tooltip{
     position: relative;;
     border:10px solid #333;
     background:#050500ec;
     padding:5px 5px;
     color:cyan;
-    /*display:none;*/
+    display:none;
   }
-  
+**/
+
   .button{
     display: inline-block;
+  }
+
+
+  .sus{
+    background: #DC3545 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: #FFFFFF;
   }
 
   .ricomidaHeader{
@@ -63,7 +84,12 @@
     background: #373A3C;
     color: white;
   }
-  
+
+  .ricomidaSmallTitle{
+    font-family: "Lobster", sans-serif;
+    background: #DC3545 0% 0% no-repeat padding-box;
+    color: white;
+    }
 
   .ricomidaFooter{
     font-family: "Lobster", sans-serif;
@@ -77,11 +103,16 @@
     border-color: white;
   }
   
-  .suscribete{
+ 
 
-    background: #DC3545 0% 0% no-repeat padding-box;
-    opacity: 1;
-    color: #FFFFFF;
+
+  
+
+  /*
+      Segun requerimiento se desaparecen las cards, cuando el tamaño es menor a 700px
+  */
+  @media only screen and (max-width: 700px) {
+    .ocultar {
+      display: none;
+    }
   }
-  
-  
